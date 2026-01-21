@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # script that configures an Ubuntu server with the below requirements
+sudo cp /etc/hosts /etc/new_hosts
+
 sed -i '/localhost/d' /etc/hosts
 sed -i '/facebook.com/d' /etc/hosts
 
